@@ -31,9 +31,9 @@ var largestNum = [-5, -2, -6, 0, -1]
 //    HINT: Google 'remainder operator'
 var numArray = [2, 17, 9, 24, 8];
 
-// 8. Given the following Array, create variable primeArray with the value [2, 7, 17, 29, 41, 53, 67, 79, 97]
-var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,];
-var primeArray = [];
+// 8. Given the following Array, create variable numThrees with the value [13, 23, 33, 43, 53, 63, 73]
+var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
+var numThrees = [];
 
 // 9. Write a loop that outputs the following to the console:
 // #
@@ -87,7 +87,7 @@ var primeArray = [];
 //     Remember, Math.random gives you a random number between 0 and 1.
 //     Calling Math.floor on that number will truncate the decimal, and give you a
 //     random number within the bounds of your array. (In this case, our array will only contain two items.)
-// 21. Use a while loop to keep flipping the coin until you get tails.
+// 21. Use a do/while loop to keep flipping the coin until you get tails.
 
 // 22. FIZZ BUZZ
 // Write a program that uses console.log to print each number up to 100, with a couple exceptions...
