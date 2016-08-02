@@ -67,7 +67,18 @@ while (counter < 5) {
 //     Print out the sentence "At home, I have _____ cats."
 //     The numbers should range from 10 to 110, in increments of 25.
 
+console.log("\nQuestion 5\n");
 
+for (i=10; i<111 ; i=i+25 ) {
+	console.log("At home I have " + i + " cats");
+}
+
+var counter = 10;
+
+while (counter < 111) {
+	console.log("At home I have " + counter + " cats");
+	counter = counter + 25;
+}
 
 
 // 6. Given the following Array, console log 'Even' if the number is even, 'Even and greater than 10' if the
@@ -75,8 +86,40 @@ while (counter < 5) {
 //    HINT: Google 'remainder operator'
 var numArray = [2, 17, 9, 24, 8];
 
+console.log("\nQuestion 6\n");
+
+var numArray = [2, 17, 9, 24, 8];
+
+for (i=0; i<numArray.length; i++) {
+
+if(numArray[i]%2 === 0 && numArray[i] <11) {
+console.log("The number is even");
+
+} else if (numArray[i]%2 === 0 && numArray[i] > 10)
+	console.log("The number is even and greater than 10");	
+else {
+	console.log("The number is odd");
+}
+
+}
+
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
 var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
+
+console.log("\nQuestion 7\n");
+
+var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77];
+
+var numThrees;
+
+ //This is what we need to output [13, 23, 33, 43, 53, 63, 73]
+ 
+ for (i=0; i<numArray.length; i = i+3) {
+ 	numThrees = numArray[i];
+ 	console.log(numThrees);
+ }
+
+
 
 // 8. Write a loop that outputs the following to the console:
 // #
@@ -87,29 +130,141 @@ var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 
 // ######
 // #######
 
+console.log("\nQuestion 8\n");
+
+// #
+// ##
+// ###
+// ####
+// #####
+// ######
+// #######
+
+var init = "";
+
+for (i=0; i<8; i++) {
+	
+		var init = init.concat("#");
+		console.log(init);
+
+	
+} 
+
+
 // 9. FIZZ BUZZ
 // Write a program that uses console.log to print each number up to 100, with a couple exceptions...
 // If the number is divisible by 3, print "Fizz" instead of the number.
 // If the number is divisible by 5, print "Buzz" instead of the number.
 // If the number is divisible by both 3 and 5, print "FizzBuzz" instead of the number.
 
+console.log("\nQuestion 9\n");
+
+// Write a program that uses console.log to print each number up to 100, with a couple exceptions...
+// If the number is divisible by 3, print "Fizz" instead of the number.
+// If the number is divisible by 5, print "Buzz" instead of the number.
+// If the number is divisible by both 3 and 5, print "FizzBuzz" instead of the number.
+
+
+for (i=0; i<101; i++) {
+	if (i%3 ===0 && i%5 === 0) {
+		console.log("Fizz");
+	} else if (i%5 === 0) {
+		console.log("Buzz");
+	} else if (i%3 === 0) {
+		console.log("FizzBuzz");
+	} else {
+		console.log (i);
+	}
+}
+
+
+
 // RO SHAM BO!
 // We're going to create a paper, rock, scissors game that prompts you for your choice and allows the computer to
 // randomly choose. You will use an alert to define the winner.
 
 // 10. Use a variable called "human" to prompt the user to type their choice.
+
+console.log("\nQuestion 10\n");
+
+var userChoice = prompt ("Type in your choice: Rock, Paper, or Scissors");
+
+console.log (userChoice);
+
 // 11. Define a variable called "computer" and use Math.random to allow the computer to randomly select a number.
 //     For reference:
 //     Math.random gives you a random number between 0 and 1, which is different each time you call it.
+
+console.log("\nQuestion 11\n");
+
+var computer = Math.random();
+
+console.log (computer);
+
+
 // 12. Let's start our conditional statement.
 //     If the random computer number falls between 0 and .33, the computer is "rock"
 //     If the random computer number falls between .34 and .66, the computer is "paper"
 //     If the random computer number falls between .67 and 1, the computer is "scissors"
+
+console.log("\nQuestion 12\n");
+
+//     If the random computer number falls between 0 and .33, the computer is "rock"
+//     If the random computer number falls between .34 and .66, the computer is "paper"
+//     If the random computer number falls between .67 and 1, the computer is "scissors"
+
+if (computer > 0 && computer < .33) {
+  computer = "rock";
+} else if (computer > .33 && computer < .66) {
+  computer = "paper";
+} else {
+  computer = "scissors";
+}
+
+console.log (computer);
+
+
+
+
 // 13. Using both "human" and the computer choice, begin another conditional statement to compare them.
+
+console.log("\nQuestion 13\n");
+
+if (computer === "rock" && userChoice === "rock") {
+  console.log ("It's a draw!");
+} else if (computer === "rock" && userChoice === "paper") {
+  console.log ("Your win!");
+} else if (computer === "rock" && userChoice === "scissors") {
+  console.log ("You lose!");
+} else if (computer === "paper" && userChoice === "paper") {
+  console.log ("It's a draw!");
+} else if (computer === "paper" && userChoice === "rock") {
+  console.log ("You lose!");
+} else if (computer === "paper" && userChoice === "scissors") {
+  console.log ("You win!");
+} else if (computer === "scissors" && userChoice === "scissors") {
+  console.log ("It's a draw!");
+} else if (computer === "scissors" && userChoice === "rock") {
+  console.log ("You win!");
+} else if (computer === "scissors" && userChoice === "paper") {
+  console.log ("You lose!");
+} else {
+  console.log ("bad input");
+}
+
 // 14. After comparing, determine who has won; the computer or the human!
+
+// This is done in the answer to the last question.
+
 // 15. Give yourself a high five for completing your first javascript game!
 // BONUS: What happens if your user enters something other than "rock", "paper", or "scissors?". Change your default case
 //     to print a snarky message to the console if the input doesn't match any of the options.
+
+// This is covered in the last else
+
+// else {
+//   console.log ("bad input");
+// }
 
 
 // ADVANCED TRACK
