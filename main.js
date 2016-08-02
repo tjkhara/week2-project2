@@ -31,15 +31,44 @@ ADVANCED TRACK: 16-20
 // 1. Output each item in the following Array to your console:
 var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
 
+console.log("\nQuestion 1\n");
+var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
+for(i=0; i<livingRoom.length; i++) {
+	console.log(livingRoom[i])
+}
+
+
+
 // 2. Using a loop, log numbers 22-33 in the console.
+
+console.log("\nQuestion 2\n");
+for(i=22; i<34; i++) {
+	console.log(i);
+}
 
 // 3. Using a similar loop, log numbers 75 to 100, only in increments of five.
 
+console.log("\nQuestion 3\n");
+for(i=75; i<101; i = i + 5) {
+	console.log(i);
+}
+
+
 // 4. Write a while loop that logs "This is how a professional loops." to the console 5 times.
+
+console.log("\nQuestion 4\n");
+var counter = 0;
+while (counter < 5) {
+	console.log("This is how a profesional loops");
+	counter++;
+}
 
 // 5. Separately, use both a for loop and while loop to do the same thing.
 //     Print out the sentence "At home, I have _____ cats."
 //     The numbers should range from 10 to 110, in increments of 25.
+
+
+
 
 // 6. Given the following Array, console log 'Even' if the number is even, 'Even and greater than 10' if the
 //    number is even and greater than 10, and 'Odd' if the number is odd.
