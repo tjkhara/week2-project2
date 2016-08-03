@@ -336,5 +336,34 @@ console.log(coin);
 //  # # # #
 // # # # #
 
+console.log("\nQuestion 17\n");
+
+var cont = "";
+
+for (i=0; i<8; i++) {
+	for(j=0; j<4; j++){
+	var cont = cont.concat(" #")
+	}
+	var cont = cont.concat("\n");
+}
+
+console.log(cont);
+
 // 20. When you have a program that generates this pattern, define a variable size = 8 and change the program
 // sso that it works for any size, outputting a grid of the given width and height.
+
+console.log("\nQuestion 18\n");
+
+var height = prompt ("What is the height of your grid?");
+var width = prompt ("What is the width of your grid?");
+
+var cont = "";
+
+for (i=0; i<height; i++) {
+	for(j=0; j<width/2; j++){
+	var cont = cont.concat(" #")
+	}
+	var cont = cont.concat("\n");
+}
+
+console.log(cont);
