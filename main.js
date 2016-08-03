@@ -271,6 +271,32 @@ if (computer === "rock" && userChoice === "rock") {
 // 16. Write a conditional statement to find the largest of the numbers in the array provided.
 var largestNum = [-5, -2, -6, 0, -1]
 
+console.log("\nQuestion 16\n");
+
+// Write a conditional statement to find the largest of the numbers in the array provided.
+
+var largestNum = [-5, -2, -6, 0, -1];
+
+var winner = largestNum[0];
+var currentNum;
+var nextNum;
+
+for (i=0; i<largestNum.length; i++) {
+	
+	if (winner >= largestNum[i]) {
+		
+	} else if (winner < largestNum[i]) {
+		winner = largestNum[i];
+	} else {
+		console.log ("The third condition.");
+	}
+
+}
+
+console.log(winner);
+
+
+
 // HEADS OR TAILS?
 // 17. Use the following variable for your coin flip action:
        var coin = Math.floor(Math.random() * 2);
@@ -278,7 +304,22 @@ var largestNum = [-5, -2, -6, 0, -1]
 //     Remember, Math.random gives you a random number between 0 and 1.
 //     Calling Math.floor on that number will truncate the decimal, and give you a
 //     random number within the bounds of your array. (In this case, our array will only contain two items.)
+
+var coin = Math.floor(Math.random() * 2);
+
+console.log(coin);
+
+
+
 // 18. Use a do/while loop to keep flipping the coin until you get tails.
+
+console.log("\nQuestion 18\n");
+
+do {
+	var coin = Math.floor(Math.random() * 2);
+} while (coin === 1);
+
+console.log(coin);
 
 // CHESS BOARD
 // 19. Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.
